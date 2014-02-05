@@ -1,0 +1,119 @@
+.modalDialog {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 300ms ease-in;
+        -moz-transition: opacity 300ms ease-in;
+        transition: opacity 300ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .modalDialog > div {
+        width: 75%;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#EEB211, #F5F5F5);
+        background: -webkit-linear-gradient(#EEB211, #F5F5F5);
+        background: -o-linear-gradient(#EEB211, #F5F5F5);
+        top: 50px;
+        overflow: scroll;
+        height: 50%;
+    }
+
+    a.xOut {
+        background: #023D7B;
+        color: #F5F5F5;
+        line-height: 25px;
+        position: absolute;
+        right: 1px;
+        top: 0.5px;
+        text-align: center;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+    a.xOut:visited {
+        background: #023D7B;
+        color: #F5F5F5;
+        line-height: 25px;
+        position: absolute;
+        right: 12px;
+        text-align: center;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+    a.xOut:hover { 
+    background: #F5F5F5;
+    color: #EEB211;
+    text-decoration: underline;
+    }
+
+    #note {
+        color: #551A8B;
+        position: relative;
+        top: -14px; 
+        font-size: 9px; 
+    }
+    #note:visited {
+        color: #551A8B;
+        position: relative;
+        top: -14px; 
+        font-size: 9px; 
+    }
+    #note:hover {
+        color: #9B30FF;
+        position: relative;
+        top: -14px; 
+        font-size: 9px;
+        text-decoration: underline; 
+    }
+    #award {
+        height: 50%;
+    }
+    #blockLeft {
+        width: 35%;
+        height: 50%;
+        float: left;
+    }
+    #block h1 {
+        text-align: left;
+        font-family: Verdana, sans-serif;
+    }
+    #block #big {
+        text-align: left;
+        font-family: Verdana, sans-serif;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    #block p {
+        text-align: left;
+        font-family: Verdana, sans-serif;
+    }
